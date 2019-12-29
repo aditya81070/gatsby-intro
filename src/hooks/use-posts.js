@@ -26,7 +26,6 @@ const usePosts = () => {
       }
     }
   `);
-  console.log(data);
   return data.allMdx.nodes.map(post => {
     const { title, slug, author, image } = post.frontmatter;
     const { excerpt } = post;
